@@ -271,12 +271,11 @@
 			</div>
 		</div>
 		<div class="center-bl">
-
 			<div class="menu">
 				<button class="menu-l-open"><i class="fa fa-bars"></i></button>
 				<a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
 				<ul>
-					<li class="dropdown-b">
+					<li class="dropdown-b" data-target="menu1">
 						<a href="#">DIAMONDS</a>
 						<div class="dropdown-inside">
 							<div class="title">search diamond gallery</div>
@@ -333,7 +332,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="dropdown-b">
+					<li class="dropdown-b" data-target="menu2">
 						<a href="#">ENGAGEMENT RINGS</a>
 						<div class="dropdown-inside">
 							<div class="title">engagement setting rings</div>
@@ -394,7 +393,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="dropdown-b">
+					<li class="dropdown-b" data-target="menu3">
 						<a href="#">WEDDING RINGS</a>
 						<div class="dropdown-inside">
 							<div class="row clearfix">
@@ -439,7 +438,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="dropdown-b">
+					<li class="dropdown-b" data-target="menu4">
 						<a href="#">GEMSTONES</a>
 						<div class="dropdown-inside">
 							<div class="row clearfix">
@@ -499,7 +498,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="dropdown-b">
+					<li class="dropdown-b" data-target="menu5">
 						<a href="#">FINE JEWELRY</a>
 						<div class="dropdown-inside">
 							<div class="row clearfix">
@@ -696,50 +695,6 @@
 													<span class="social-login-text">sign in with facebook</span>
 												</a>
 											</form>
-										</div>
-										<!-- Modal -->
-										<div id="forgotModal" class="forgot-modal modal fade" role="dialog">
-											<div class="modal-dialog">
-
-												<!-- Modal content-->
-												<div class="modal-content">
-													<button type="button" class="close" data-dismiss="modal">&times;</button>
-													<div class="modal-body">
-														<div class="text-center">
-															<div class="remind-modal-title">Forgot Password?</div>
-															<div class="remind-modal-text">To reset your password, please enter your email address</div>
-														</div>
-														<form action="forgot">
-															<input type="text" class="forgot-input">
-															<div class="text-center">
-																<button class="modal-continue" type="button">continue</button>
-															</div>
-														</form>
-													</div>
-												</div>
-
-											</div>
-										</div>
-
-										<!-- Modal -->
-										<div id="forgotModalWrong" class="forgot-modal modal fade" role="dialog">
-											<div class="modal-dialog">
-
-												<!-- Modal content-->
-												<div class="modal-content">
-													<button type="button" class="close" data-dismiss="modal">&times;</button>
-													<div class="modal-body">
-														<div class="text-center">
-															<div class="wrong-email-text">
-																There is no account under this email address.
-																Please try again or register
-															</div>
-															<button class="modal-continue" type="button" data-dismiss="modal">close</button>
-														</div>
-													</div>
-												</div>
-
-											</div>
 										</div>
 									</div>
 								</div>
@@ -974,6 +929,51 @@
 		</section>
 
 	</footer>
+</div>
+
+<!-- Modal -->
+<div id="forgotModal" class="forgot-modal modal fade" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<div class="modal-body">
+				<div class="text-center">
+					<div class="remind-modal-title">Forgot Password?</div>
+					<div class="remind-modal-text">To reset your password, please enter your email address</div>
+				</div>
+				<form action="forgot">
+					<input type="text" class="forgot-input">
+					<div class="text-center">
+						<button class="modal-continue" type="button">continue</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!-- Modal -->
+<div id="forgotModalWrong" class="forgot-modal modal fade" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<div class="modal-body">
+				<div class="text-center">
+					<div class="wrong-email-text">
+						There is no account under this email address.
+						Please try again or register
+					</div>
+					<button class="modal-continue" type="button" data-dismiss="modal">close</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
 </div>
 
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
