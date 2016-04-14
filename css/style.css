@@ -741,7 +741,7 @@ button:hover, button:focus {
             margin-top: 40px; }
       .menu > ul > li > .dropdown-inside {
         width: 915px;
-        padding: 40px;
+        padding: 50px;
         position: absolute;
         z-index: 70;
         left: 0;
@@ -3382,7 +3382,7 @@ button:hover, button:focus {
       width: 250px; }
     .list-product .filter-product-line .dropdown {
       width: 120px;
-      height: 40px;
+      height: 50px;
       margin-left: 15px;
       margin-right: 10px;
       position: relative;
@@ -3411,7 +3411,7 @@ button:hover, button:focus {
       margin-right: 70px;
       float: right; }
     .list-product .filter-product-line .view-product {
-      padding-top: 9px;
+      padding-top: 15px;
       float: right; }
       .list-product .filter-product-line .view-product .btn-view {
         margin-left: 5px;
@@ -4583,6 +4583,10 @@ button:hover, button:focus {
         margin-bottom: 10px; }
         .education-center .one-block .education-block .title-e a {
           color: #ff5959; }
+
+.dropdown .select-simulate-btn.active ~ .select-simulate-list {
+  background-color: white;
+  z-index: 20; }
 
 @media (max-width: 1700px) {
   .menu {
