@@ -3382,14 +3382,14 @@ button:hover, button:focus {
       width: 250px; }
     .list-product .filter-product-line .dropdown {
       width: 120px;
-      height: 50px;
       margin-left: 15px;
       margin-right: 10px;
       position: relative;
-      background-color: white;
       border-radius: 0;
       font-size: 16px;
       border: 0; }
+      .list-product .filter-product-line .dropdown select {
+        border-radius: 0; }
       .list-product .filter-product-line .dropdown .dropdown-menu {
         min-width: 100%;
         font-size: 15px;
@@ -3411,7 +3411,7 @@ button:hover, button:focus {
       margin-right: 70px;
       float: right; }
     .list-product .filter-product-line .view-product {
-      padding-top: 15px;
+      padding-top: 6px;
       float: right; }
       .list-product .filter-product-line .view-product .btn-view {
         margin-left: 5px;
@@ -3422,6 +3422,19 @@ button:hover, button:focus {
         background-color: transparent; }
         .list-product .filter-product-line .view-product .btn-view.active {
           color: #A2D9F3; }
+
+.filter-advanced-wrapper {
+  display: block; }
+  .filter-advanced-wrapper.close {
+    display: none; }
+
+.dropdown-advanced .filter-drop-drop input {
+  position: relative; }
+.dropdown-advanced .input-slider-p {
+  width: 50px;
+  height: 23px;
+  margin: 10px -8px -15px;
+  font-size: 12px; }
 
 .wrapper-product-table {
   position: relative; }

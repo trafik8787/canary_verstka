@@ -123,11 +123,13 @@ $( document ).ready(function( $ ) {
             setTimeout(function(){
                 $(".filter-box").removeClass('open');
             }, speed);
+            $(".filter-advanced-wrapper").removeClass('close');
         } else {
             th.slideUp(speed);
             setTimeout(function(){
                 $(".filter-box").addClass('open');
             }, speed);
+            $(".filter-advanced-wrapper").addClass('close');
         }
     });
 
@@ -241,6 +243,8 @@ $( document ).ready(function( $ ) {
         max: 4,
         values: [ 0, 4 ],
         slide: function (event, ui) {
+            $("#depth1").val(changePrice(ui.values[0]));
+            $("#depth2").val(changePrice(ui.values[1]));
             if (Number(ui.values[0])!=0||Number(ui.values[1])!=4){
                 $("[data-target=depth-slider]").addClass('change');
             } else {
@@ -248,6 +252,8 @@ $( document ).ready(function( $ ) {
             }
         }
     });
+    $("#depth1").val("0");
+    $("#depth2").val("4");
 
     $( "#table" ).slider({
         range: true,
@@ -255,6 +261,8 @@ $( document ).ready(function( $ ) {
         max: 4,
         values: [ 0, 4 ],
         slide: function (event, ui) {
+            $("#table1").val(changePrice(ui.values[0]));
+            $("#table2").val(changePrice(ui.values[1]));
             if (Number(ui.values[0])!=0||Number(ui.values[1])!=4){
                 $("[data-target=table-slider]").addClass('change');
             } else {
@@ -262,6 +270,8 @@ $( document ).ready(function( $ ) {
             }
         }
     });
+    $("#table1").val("0");
+    $("#table2").val("4");
 
     $("#slider-range4").slider({
         range: true,

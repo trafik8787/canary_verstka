@@ -3666,14 +3666,17 @@
     }
     .dropdown{
       width: 120px;
-      height: 50px;
+      //height: 50px;
       margin-left: 15px;
       margin-right: 10px;
       position: relative;
-      background-color: white;
+      //background-color: white;
       border-radius: 0;
       font-size: 16px;
       border: 0;
+      select{
+        border-radius: 0;
+      }
       .dropdown-menu{
         min-width: 100%;
         font-size: 15px;
@@ -3701,7 +3704,7 @@
       float: right;
     }
     .view-product{
-      padding-top: 15px;
+      padding-top: 6px;
       float: right;
       .btn-view{
         margin-left: 5px;
@@ -3715,6 +3718,25 @@
         }
       }
     }
+  }
+}
+
+.filter-advanced-wrapper{
+  display: block;
+  &.close{
+    display: none;
+  }
+}
+
+.dropdown-advanced{
+  .filter-drop-drop input{
+    position: relative;
+  }
+  .input-slider-p{
+    width: 50px;
+    height: 23px;
+    margin: 10px -8px -15px;
+    font-size: 12px;
   }
 }
 
