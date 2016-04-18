@@ -123,13 +123,11 @@ $( document ).ready(function( $ ) {
             setTimeout(function(){
                 $(".filter-box").removeClass('open');
             }, speed);
-            $(".filter-advanced-wrapper").removeClass('close');
         } else {
             th.slideUp(speed);
             setTimeout(function(){
                 $(".filter-box").addClass('open');
             }, speed);
-            $(".filter-advanced-wrapper").addClass('close');
         }
     });
 

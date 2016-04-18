@@ -3025,6 +3025,8 @@ button:hover, button:focus {
   .step-product > *:nth-child(3) .one-block.active {
     margin-left: -60px; }
 
+.filter-box.open .filter-wrapper {
+  overflow: hidden; }
 .filter-box.open .filter-change:before {
   width: 0;
   height: 0;
@@ -3036,8 +3038,9 @@ button:hover, button:focus {
   border-color: #ff5959 transparent transparent transparent; }
 .filter-box .filter-wrapper {
   height: inherit;
-  padding-bottom: 20px;
-  overflow: hidden; }
+  padding-bottom: 20px; }
+  .filter-box .filter-wrapper.filter-wrapper-pn {
+    padding-bottom: 0; }
 .filter-box .functional-filter {
   margin-bottom: 40px;
   position: relative;
@@ -3283,7 +3286,9 @@ button:hover, button:focus {
       display: none; }
 
 .filter-advanced-wrapper {
-  position: relative; }
+  position: relative;
+  margin-bottom: -40px;
+  z-index: 100; }
   .filter-advanced-wrapper .dropdown-advanced {
     position: absolute;
     top: 30px;
@@ -3422,11 +3427,6 @@ button:hover, button:focus {
         background-color: transparent; }
         .list-product .filter-product-line .view-product .btn-view.active {
           color: #A2D9F3; }
-
-.filter-advanced-wrapper {
-  display: block; }
-  .filter-advanced-wrapper.close {
-    display: none; }
 
 .dropdown-advanced .filter-drop-drop input {
   position: relative; }

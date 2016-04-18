@@ -3212,6 +3212,9 @@
 
 .filter-box{
   &.open{
+    .filter-wrapper{
+      overflow: hidden;
+    }
     .filter-change{
       &:before{
         width: 0;
@@ -3228,7 +3231,9 @@
   .filter-wrapper{
     height: inherit;
     padding-bottom: 20px;
-    overflow: hidden;
+    &.filter-wrapper-pn{
+      padding-bottom: 0;
+    }
   }
   .functional-filter{
     margin-bottom: 40px;
@@ -3535,6 +3540,8 @@
 
 .filter-advanced-wrapper{
   position: relative;
+  margin-bottom: -40px;
+  z-index: 100;
   .dropdown-advanced{
     position: absolute;
     top: 30px;
@@ -3718,13 +3725,6 @@
         }
       }
     }
-  }
-}
-
-.filter-advanced-wrapper{
-  display: block;
-  &.close{
-    display: none;
   }
 }
 
