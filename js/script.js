@@ -100,7 +100,16 @@ $( document ).ready(function( $ ) {
     $(".step-product .one-block").click(function(e) {
         e.preventDefault();
         $(".step-product .one-block").removeClass("active");
-        $(this).addClass("active");
+        $(this).addClass("active").removeClass('prev-step');
+        var ind=$(this).closest('.col-md-4').index();
+        $(".step-product .col-md-4").each(function(){
+            var ind_th=$(this).index();
+                if (ind_th<ind){
+                    $(this).addClass('prev-step');
+                } else {
+                    $(this).removeClass('prev-step');
+                }
+        });
     });
 
     $(".menu-l-open").click(function() {
