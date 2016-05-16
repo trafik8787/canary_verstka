@@ -11,6 +11,7 @@
 	<link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/owl.carousel/owl.carousel.css"/>
 	<link rel="stylesheet" href="vendor/jquery.sliderPro/slider-pro.min.css"/>
+	<link rel="stylesheet" href="vendor/select2/dist/css/select2.min.css">
 	<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body class="static-page">
@@ -705,24 +706,21 @@
 												<label for="si5" class="shipping-label">Address<span class="reqstar">*</span></label>
 											</div>
 											<div class="cc-shipping-row">
-												<input type="text" class="shipping-input select-simulate-input" id="si6" required>
-												<label for="si6" class="shipping-label">Country<span class="reqstar">*</span></label>
-												<a href="#" class="select-simulate-btn"></a>
-												<ul class="select-simulate-list">
-													<li><a href="#" data-value="data 1">data 1</a></li>
-													<li><a href="#" data-value="data 2">data 2</a></li>
-													<li><a href="#" data-value="data 3">data 3</a></li>
-												</ul>
+												<select name="country-sec" class="shipping-input styled-select" data-placeholder="Country" id="si6" style="width: 100%">
+													<option value=""></option>
+													<option value="UK">UK</option>
+													<option value="Russia">Russia</option>
+													<option value="France">France</option>
+												</select>
 											</div>
 											<div class="cc-shipping-row">
-												<input type="text" class="shipping-input select-simulate-input" id="si7" required>
-												<label for="si7" class="shipping-label">State/Province<span class="reqstar">*</span></label>
-												<a href="#" class="select-simulate-btn"></a>
-												<ul class="select-simulate-list">
-													<li><a href="#" data-value="data 1">data 1</a></li>
-													<li><a href="#" data-value="data 2">data 2</a></li>
-													<li><a href="#" data-value="data 3">data 3</a></li>
-												</ul>
+												<select name="state-sel" class="shipping-input styled-select" data-placeholder="State/Province" id="si7" style="width: 100%">
+													<option value=""></option>
+													<option value="France">State 1</option>
+													<option value="France1">State 2</option>
+													<option value="State2">State 3</option>
+													<option value="State3">State 4</option>
+												</select>
 											</div>
 											<div class="cc-shipping-row">
 												<input type="text" class="shipping-input" id="si8" required>
@@ -993,6 +991,7 @@
 <script type="text/javascript" src="js/device.min.js"></script>
 <script type="text/javascript" src="vendor/jquery-ui/jquery-ui.min.js"></script>
 <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="vendor/select2/dist/js/select2.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
